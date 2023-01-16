@@ -1,0 +1,23 @@
+#EXTM3U
+#EXTM3U
+
+#EXTINF:-1 tvg-chno="9" tvg-id="TVMax.pa" tvg-logo="https://i.imgur.com/XcrkfGh.png" group-title="Undefined",TVMax (720p)
+https://bcovlive-a.akamaihd.net/474b6caf58f8407fb1d1cc1ef64f50ff/us-west-2/6058004209001/playlist_dvr.m3u8
+
+#EXTINF:-1 tvg-chno="2" tvg-id="TVN.pa" tvg-logo="https://i.imgur.com/tGeHwxd.png" group-title="Undefined",TVN (720p)
+https://bcovlive-a.akamaihd.net/2f670e324b9b46bba7582e919ed90924/us-east-1/6058004209001/playlist.m3u8
+
+#EXTINF:-1 tvg-chno="4" tvg-id="RPCTV.pa" tvg-logo="https://i.imgur.com/DzYPhdZ.png" group-title="Undefined",RPC (720p) [Geo-blocked]
+https://mdstrm.com/live-stream-playlist/5d88d659120a717cf93ce620.m3u8
+
+#EXTINF:-1 tvg-id="Food52.us" tvg-logo="https://i.imgur.com/cjvqjh2.png" group-title="Cooking",Food 52 (720p)
+https://cinedigm.vo.llnwd.net/conssui/amagi_hls_data_xumo1212A-redboxfood52A/CDN/master.m3u8
+
+#EXTINF:-1 tvg-id="SoYummy.us" tvg-logo="https://i.imgur.com/ju2NyoL.png" group-title="Cooking",So Yummy! (1080p)
+https://dai2.xumo.com/amagi_hls_data_xumo1212A-redboxsoyummy/CDN/playlist.m3u8
+
+#EXTINF:-1 tvg-id="CabinaTelemetroRadio.pa" tvg-logo="https://i.imgur.com/X9NLS5K.png" group-title="Undefined",Cabina Telemetro Radio (480p)
+https://mdstrm.com/live-stream-playlist/5d97ca5673de440761ff194e.m3u8
+
+#EXTINF:-1 tvg-chno="13" tvg-id="Telemetro.pa" tvg-logo="https://i.imgur.com/vJJrGgV.png" group-title="Undefined",Telemetro (480p)
+http://209.91.213.10:8088/play/a00h
