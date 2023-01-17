@@ -21,3 +21,6 @@ https://mdstrm.com/live-stream-playlist/5d97ca5673de440761ff194e.m3u8
 
 #EXTINF:-1 tvg-chno="13" tvg-id="Telemetro.pa" tvg-logo="https://i.imgur.com/vJJrGgV.png" group-title="Panamá",Telemetro (480p)
 http://209.91.213.10:8088/play/a00h
+
+#EXTINF:-1,Chileiptv:La Pintana TV
+http://cdn.vms.grupoz.cl/lapintanatv/content/5a7c8e25e19d3e641aca9fb2/hls/playlist.m3u8
