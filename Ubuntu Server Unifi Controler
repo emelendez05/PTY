@@ -1,0 +1,79 @@
+01. Actualizar Ubuntu
+
+sudo apt update && apt upgrade
+
+02. Instalar Java 
+
+sudo apt install default-jre
+
+version de Java:
+
+java -version
+
+bajar la version de java a openjdk-8-jre-headless
+
+Descargar
+
+curl -qo /tmp/openjdk-8-jre-headless_8u275-b01.deb "https://launchpadlibrarian.net/505954411/openjdk-8-jre-headless_8u275-b01-0ubuntu1~18.04_amd64.deb"
+Instalar
+
+sudo dpkg -i /tmp/openjdk-8-jre-headless_8u275-b01.deb 
+
+Para evitar que Java haga update:
+
+sudo apt-mark hold openjdk-8-jre-headless
+
+03. MongoDB Instalar Libssl 1.1
+
+Descargar
+
+wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2_amd64.deb
+Instalar
+
+sudo dpkg -i libssl1.1_1.1.1f-1ubuntu2_amd64.deb
+
+04. Instalar y agregar los repositorios de MongoDB Ubuntu
+
+Usar esta version 4.4 
+
+curl https://pgp.mongodb.com/server-4.4.asc | sudo gpg --dearmor | sudo tee /usr/share/keyrings/mongodb-org-server-4.4-archive-keyring.gpg >/dev/null
+Then add GPP, for ubuntu 22.04 Repository
+
+echo 'deb [arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-org-server-4.4-archive-keyring.gpg] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.4 multiverse' | sudo tee /etc/apt/sources.list.d/mongodb-org-4.4.list > /dev/null
+Update Ubuntu
+
+sudo apt update -y
+
+Instalar MongoDB package
+
+sudo apt install mongodb-org-server -y
+05. Instala y agregar los repositorios de unifi ubuntu
+
+Descargar GPP Key usando el siguiente comando
+
+curl https://dl.ui.com/unifi/unifi-repo.gpg | sudo tee /usr/share/keyrings/ubiquiti-archive-keyring.gpg >/dev/null
+
+Agrega el repositorio de Unifi Controller
+
+echo 'deb [signed-by=/usr/share/keyrings/ubiquiti-archive-keyring.gpg] https://www.ui.com/downloads/unifi/debian stable ubiquiti' | sudo tee /etc/apt/sources.list.d/100-ubnt-unifi.list > /dev/null
+
+Actualizar Ubuntu
+sudo apt update -y
+
+Instalar paquetes Unifi
+sudo apt install unifi
+
+06. Status
+
+systemctl status unifi
+
+07. Herramientas pra ver si el 8443 esta abierto 
+
+sudo apt install net-tools 
+netstat -tnl
+
+Si el puerto esta abierto todo esta funcionando correctamente 
+
+Para Entrar al controller solo debes poner el ip y el puerto 
+
+https://IP:8443
